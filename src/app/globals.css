@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .clip-start {
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  }
+  .clip-middle {
+    clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+  }
+  .clip-end {
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .transition-flex {
+    transition: .25s flex .125s linear;
+  }
+}
