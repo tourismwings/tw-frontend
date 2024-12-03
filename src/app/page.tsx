@@ -1,9 +1,9 @@
-import Header from "./components/Header";
-import NavMenu from "./components/NavMenu";
-import Banner from "./components/Banner";
-import Latest from "./components/Latest";
-import TwoGrid from "./components/TwoGrid";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import NavMenu from "./components/NavMenu";
+// import Banner from "./components/Banner";
+// import Latest from "./components/Latest";
+// import TwoGrid from "./components/TwoGrid";
+// import Footer from "./components/Footer";
 import { createClient } from "next-sanity";
 
 export async function getData() {
@@ -25,12 +25,13 @@ export default async function Home() {
   console.log('posts',posts)
   return (
     <>
-    <Header posts={posts} />
+    {/* <Header posts={posts} />
     <NavMenu />
     <Latest />
     <Banner />
     <TwoGrid />
-    <Footer />
+    <Footer /> */}
+    ss
     </>
       
     
